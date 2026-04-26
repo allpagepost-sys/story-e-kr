@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://story-e-kr.pages.dev/sitemap.xml
