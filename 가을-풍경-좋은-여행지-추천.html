@@ -197,6 +197,70 @@ A5: 단풍 절정기 주말에는 인기 여행지의 숙소가 빠르게 마감
     </section>
   
       
+  <div class="rating-section" id="rating-widget">
+    <div class="rating-title">이 글이 도움이 됐나요?</div>
+    <div class="rating-subtitle">별점을 남겨주세요</div>
+    <div class="stars-input" id="stars-input">
+      <button class="star-btn" data-score="1" onclick="submitRating(1)">⭐</button><button class="star-btn" data-score="2" onclick="submitRating(2)">⭐</button><button class="star-btn" data-score="3" onclick="submitRating(3)">⭐</button><button class="star-btn" data-score="4" onclick="submitRating(4)">⭐</button><button class="star-btn" data-score="5" onclick="submitRating(5)">⭐</button>
+    </div>
+    <div class="rating-result" id="rating-result">
+      <div class="rating-avg" id="rating-avg">4.9</div>
+      <div class="stars-display">⭐⭐⭐⭐⭐</div>
+      <div class="rating-count" id="rating-count">19명 참여</div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var pageId = '22749b72-106b-41c5-817d-9f18c2c98725';
+      var domainId = 'ab2554c0-2901-4bcd-9270-3d5b3c633fed';
+      var apiBase = 'https://money-machine-1-f9vo.onrender.com';
+      var already = localStorage.getItem('rated_' + pageId);
+      if (already) {
+        document.getElementById('stars-input').innerHTML = '<div style="color:#999;font-size:0.85rem">이미 평가하셨습니다 (' + already + '점)</div>';
+      }
+      window.submitRating = function(score) {
+        if (localStorage.getItem('rated_' + pageId)) {
+          alert('이미 평가하셨습니다');
+          return;
+        }
+        fetch(apiBase + '/api/ratings/submit', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({page_id: pageId, domain_id: domainId, score: score})
+        })
+        .then(r => r.json())
+        .then(d => {
+          if (d.ok) {
+            localStorage.setItem('rated_' + pageId, score);
+            document.getElementById('stars-input').innerHTML = '<div style="font-size:1.5rem">' + '⭐'.repeat(score) + '</div><div style="color:#666;font-size:0.85rem;margin-top:0.3rem">감사합니다!</div>';
+            if (d.avg) document.getElementById('rating-avg').textContent = d.avg.toFixed(1);
+            if (d.count) document.getElementById('rating-count').textContent = d.count + '명 참여';
+          } else {
+            alert(d.message || '이미 평가하셨습니다');
+          }
+        })
+        .catch(function(){});
+      };
+      // 호버 효과
+      var btns = document.querySelectorAll('.star-btn');
+      btns.forEach(function(btn) {
+        btn.addEventListener('mouseenter', function() {
+          var score = parseInt(this.dataset.score);
+          btns.forEach(function(b, i) {
+            b.style.filter = i < score ? 'grayscale(0)' : 'grayscale(1)';
+            b.style.opacity = i < score ? '1' : '0.4';
+          });
+        });
+        btn.addEventListener('mouseleave', function() {
+          btns.forEach(function(b) {
+            b.style.filter = 'grayscale(1)';
+            b.style.opacity = '0.4';
+          });
+        });
+      });
+    })();
+  </script>
+      
       
     </article>
   </main>
