@@ -58,6 +58,17 @@ a { color: #43a047; }
     .post-card h2 { font-size: 0.88rem; margin-bottom: 0.35rem; line-height: 1.4; color: #1a1a1a; font-weight: 600; }
     .post-card p { font-size: 0.78rem; color: #777; margin-bottom: 0.4rem; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .post-card-meta { font-size: 0.7rem; color: #bbb; }
+    /* 별점 위젯 */
+    .rating-section { text-align: center; padding: 2rem 1rem; margin: 2rem 0; background: #fafafa; border-radius: 12px; border: 1px solid #eee; }
+    .rating-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: #333; }
+    .rating-subtitle { font-size: 0.8rem; color: #999; margin-bottom: 1rem; }
+    .stars-input { display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 1rem; }
+    .star-btn { font-size: 2.5rem; cursor: pointer; transition: transform 0.1s; background: none; border: none; padding: 0; line-height: 1; filter: grayscale(1); opacity: 0.4; }
+    .star-btn:hover, .star-btn.active { filter: grayscale(0); opacity: 1; transform: scale(1.2); }
+    .rating-result { font-size: 0.85rem; color: #666; }
+    .rating-avg { font-size: 1.8rem; font-weight: 700; color: #2e7d32; }
+    .rating-count { font-size: 0.8rem; color: #999; margin-top: 0.2rem; }
+    .stars-display { color: #fbbf24; font-size: 1.2rem; letter-spacing: 0.1rem; }
     
     .post-content { background: #ffffff; padding: 3rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
     .post-content h1 { font-size: 2rem; margin-bottom: 1rem; line-height: 1.3; }
@@ -162,58 +173,6 @@ a { color: #43a047; }
       </article>
     
       <article class="post-card">
-        <a href="/주말-당일치기-여행-추천.html">
-          <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/262/600/400')">
-            
-          </div>
-          <div class="post-card-body">
-            <h2>주말 당일치기 여행 추천: 부담 없이 떠나는 나만의 소확행 모험</h2>
-            <p>바쁜 일상 속 주말 당일치기 여행으로 활력을! 젠틀 가이드가 직접 경험한 성공과 실패담, 실용적인 팁을 공유하며 완벽하지 않아도 괜찮은 소중한 하루를 제안합니다....</p>
-            <span class="post-card-meta">2026. 4. 30.</span>
-          </div>
-        </a>
-      </article>
-    
-      <article class="post-card">
-        <a href="/혼자-떠나는-여행-추천.html">
-          <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/819/600/400')">
-            
-          </div>
-          <div class="post-card-body">
-            <h2>혼자 떠나는 여행 추천: 나만의 발견을 위한 용감한 발걸음</h2>
-            <p>혼자 떠나는 여행, 두려움 대신 설렘을 안고 떠나볼까요? &#39;더 젠틀 가이드&#39;가 경험을 바탕으로 나만의 여정을 위한 실질적인 팁과 용기를 북돋아 드립니다. 자유와 ...</p>
-            <span class="post-card-meta">2026. 4. 29.</span>
-          </div>
-        </a>
-      </article>
-    
-      <article class="post-card">
-        <a href="/해외-커플-여행지-추천.html">
-          <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/393/600/400')">
-            
-          </div>
-          <div class="post-card-body">
-            <h2>두근거림 가득! 젠틀 가이드의 해외 커플 여행지 추천과 추억 만들기</h2>
-            <p>젠틀 가이드가 직접 경험하고 추천하는 해외 커플 여행지! 두 분만의 특별한 추억을 만들 수 있는 로맨틱한 여행지를 소개합니다. 예산별 팁과 솔직한 후기로 최고의 ...</p>
-            <span class="post-card-meta">2026. 4. 28.</span>
-          </div>
-        </a>
-      </article>
-    
-      <article class="post-card">
-        <a href="/국내-가족-여행지-추천.html">
-          <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/389/600/400')">
-            
-          </div>
-          <div class="post-card-body">
-            <h2>온 가족이 행복한 추억 만들기: 국내 가족 여행지 추천과 즐거운 여행 비법</h2>
-            <p>아이부터 어른까지 모두가 만족할 국내 가족 여행지를 찾으세요? 젠틀 가이드가 직접 경험한 실패와 성공 스토리를 통해 당신의 완벽한 가족 여행을 위한 팁과 추천 장...</p>
-            <span class="post-card-meta">2026. 4. 27.</span>
-          </div>
-        </a>
-      </article>
-    
-      <article class="post-card">
         <a href="/집에서-할-수-있는-취미-활동.html">
           <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/948/600/400')">
             
@@ -221,7 +180,7 @@ a { color: #43a047; }
           <div class="post-card-body">
             <h2>집에서 할 수 있는 취미 활동: 나만의 행복을 찾는 유쾌한 안내서</h2>
             <p>집에서 할 수 있는 취미 활동을 찾으시나요? 젠틀 가이드가 알려주는 실내 취미의 세계! 뜨개질부터 디지털 드로잉까지, 당신의 취향을 찾아 즐거운 여정을 시작해보세...</p>
-            <span class="post-card-meta">2026. 4. 26.</span>
+            <span class="post-card-meta">2026. 5. 1.</span>
           </div>
         </a>
       </article>
@@ -234,20 +193,46 @@ a { color: #43a047; }
           <div class="post-card-body">
             <h2>나만의 행복 찾기: 혼자 할 수 있는 취미 추천, 여유와 성장을 위한 길</h2>
             <p>바쁜 일상 속 나를 위한 시간, &#39;혼자 할 수 있는 취미 추천&#39;으로 삶의 활력을 찾아보세요. 더 젠틀 가이드가 실패담과 함께 따뜻한 조언을 나눕니다.</p>
-            <span class="post-card-meta">2026. 4. 26.</span>
+            <span class="post-card-meta">2026. 5. 1.</span>
           </div>
         </a>
       </article>
     
       <article class="post-card">
-        <a href="/혼자-할-수-있는-취미-추천.html">
-          <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/368/600/400')">
+        <a href="/주말-당일치기-여행-추천.html">
+          <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/262/600/400')">
             
           </div>
           <div class="post-card-body">
-            <h2>혼자 할 수 있는 취미 추천: 나만의 속도로 즐기는 여정, The Gentle Guide와 함께!</h2>
-            <p>바쁜 일상 속 나를 위한 시간, 혼자 할 수 있는 취미를 찾고 계신가요? The Gentle Guide가 직접 경험한 다양한 취미들을 따뜻하고 유쾌한 시선으로 소...</p>
-            <span class="post-card-meta">2026. 4. 26.</span>
+            <h2>주말 당일치기 여행 추천: 부담 없이 떠나는 나만의 소확행 모험</h2>
+            <p>바쁜 일상 속 주말 당일치기 여행으로 활력을! 젠틀 가이드가 직접 경험한 성공과 실패담, 실용적인 팁을 공유하며 완벽하지 않아도 괜찮은 소중한 하루를 제안합니다....</p>
+            <span class="post-card-meta">2026. 5. 1.</span>
+          </div>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/혼자-떠나는-여행-추천.html">
+          <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/819/600/400')">
+            
+          </div>
+          <div class="post-card-body">
+            <h2>혼자 떠나는 여행 추천: 나만의 발견을 위한 용감한 발걸음</h2>
+            <p>혼자 떠나는 여행, 두려움 대신 설렘을 안고 떠나볼까요? &#39;더 젠틀 가이드&#39;가 경험을 바탕으로 나만의 여정을 위한 실질적인 팁과 용기를 북돋아 드립니다. 자유와 ...</p>
+            <span class="post-card-meta">2026. 5. 1.</span>
+          </div>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/해외-커플-여행지-추천.html">
+          <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/393/600/400')">
+            
+          </div>
+          <div class="post-card-body">
+            <h2>두근거림 가득! 젠틀 가이드의 해외 커플 여행지 추천과 추억 만들기</h2>
+            <p>젠틀 가이드가 직접 경험하고 추천하는 해외 커플 여행지! 두 분만의 특별한 추억을 만들 수 있는 로맨틱한 여행지를 소개합니다. 예산별 팁과 솔직한 후기로 최고의 ...</p>
+            <span class="post-card-meta">2026. 5. 1.</span>
           </div>
         </a>
       </article>
@@ -260,7 +245,7 @@ a { color: #43a047; }
           <div class="post-card-body">
             <h2>필라테스 집에서 따라하기: 초보자도 즐거운 홈 필라테스 여정</h2>
             <p>집에서 필라테스 시작하기? 망설이지 마세요! 더 젠틀 가이드가 알려주는 초보자를 위한 &#39;필라테스 집에서 따라하기&#39; 노하우와 즐거운 경험담. 나만의 속도로 건강한 ...</p>
-            <span class="post-card-meta">2026. 4. 26.</span>
+            <span class="post-card-meta">2026. 5. 1.</span>
           </div>
         </a>
       </article>
@@ -273,7 +258,33 @@ a { color: #43a047; }
           <div class="post-card-body">
             <h2>나만의 즐거움을 찾는 여정: 새로운 취미 찾기 방법 가이드</h2>
             <p>어떤 취미를 시작해야 할지 막막하신가요? &#39;젠틀 가이드&#39;와 함께 나에게 꼭 맞는 새로운 취미 찾기 방법을 탐험하고, 삶에 활력을 불어넣을 즐거운 여정을 시작해 보...</p>
-            <span class="post-card-meta">2026. 4. 26.</span>
+            <span class="post-card-meta">2026. 5. 1.</span>
+          </div>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/혼자-할-수-있는-취미-추천.html">
+          <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/368/600/400')">
+            
+          </div>
+          <div class="post-card-body">
+            <h2>혼자 할 수 있는 취미 추천: 나만의 속도로 즐기는 여정, The Gentle Guide와 함께!</h2>
+            <p>바쁜 일상 속 나를 위한 시간, 혼자 할 수 있는 취미를 찾고 계신가요? The Gentle Guide가 직접 경험한 다양한 취미들을 따뜻하고 유쾌한 시선으로 소...</p>
+            <span class="post-card-meta">2026. 5. 1.</span>
+          </div>
+        </a>
+      </article>
+    
+      <article class="post-card">
+        <a href="/국내-가족-여행지-추천.html">
+          <div class="post-card-thumb" style="background-image:url('https://picsum.photos/seed/389/600/400')">
+            
+          </div>
+          <div class="post-card-body">
+            <h2>온 가족이 행복한 추억 만들기: 국내 가족 여행지 추천과 즐거운 여행 비법</h2>
+            <p>아이부터 어른까지 모두가 만족할 국내 가족 여행지를 찾으세요? 젠틀 가이드가 직접 경험한 실패와 성공 스토리를 통해 당신의 완벽한 가족 여행을 위한 팁과 추천 장...</p>
+            <span class="post-card-meta">2026. 5. 1.</span>
           </div>
         </a>
       </article>

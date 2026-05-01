@@ -24,12 +24,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://story-e-kr.pages.dev/필라테스-집에서-따라하기.html</loc>
-    <lastmod>2026-04-26T03:42:30.067Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://story-e-kr.pages.dev/해외-커플-여행지-추천.html</loc>
     <lastmod>2026-04-28T00:11:55.004Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,6 +32,18 @@
   <url>
     <loc>https://story-e-kr.pages.dev/혼자-떠나는-여행-추천.html</loc>
     <lastmod>2026-04-29T00:12:00.950Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://story-e-kr.pages.dev/집에서-할-수-있는-취미-활동.html</loc>
+    <lastmod>2026-04-26T03:44:25.825Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://story-e-kr.pages.dev/가을-풍경-좋은-여행지-추천.html</loc>
+    <lastmod>2026-05-01T00:11:36.958Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -54,14 +60,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://story-e-kr.pages.dev/집에서-할-수-있는-취미-활동.html</loc>
-    <lastmod>2026-04-26T03:44:25.825Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://story-e-kr.pages.dev/가을-풍경-좋은-여행지-추천.html</loc>
-    <lastmod>2026-05-01T00:11:36.958Z</lastmod>
+    <loc>https://story-e-kr.pages.dev/필라테스-집에서-따라하기.html</loc>
+    <lastmod>2026-04-26T03:42:30.067Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
