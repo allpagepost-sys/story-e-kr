@@ -77,6 +77,7 @@ a { color: #43a047; }
     .share-twitter { background: #000; color: #fff; }
     .share-facebook { background: #1877F2; color: #fff; }
     .share-copy { background: #6c757d; color: #fff; }
+    .share-native { background: #28a745; color: #fff; }
 
     /* 다크모드 */
     @media (prefers-color-scheme: dark) {
@@ -243,8 +244,20 @@ A5: 초기 비용이 거의 들지 않는 취미 활동도 많습니다. 예를 
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
         복사
       </button>
+      
+      <button class="share-btn share-native" id="share-native-btn" onclick="(function(){if(navigator.share){navigator.share({title:'집에서 할 수 있는 취미 활동: 나만의 행복을 찾는 유쾌한 안내서',text:'집에서 할 수 있는 취미 활동을 찾으시나요? 젠틀 가이드가 알려주는 실내 취미의 세계! 뜨개질부터 디지털 드로잉까지, 당신의 취향을 찾아 즐거운 여정을 시작해보세요. 경험과 스토리',url:'https://story-e-kr.pages.dev/집에서-할-수-있는-취미-활동.html'}).catch(function(){});}else{document.getElementById('share-native-btn').style.display='none';}})()" title="공유하기">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+        공유
+      </button>
     </div>
   </section>
+  <script>
+    // Web Share API 미지원 시 버튼 숨김
+    (function(){
+      var btn = document.getElementById('share-native-btn');
+      if (btn && !navigator.share) btn.style.display = 'none';
+    })();
+  </script>
       
       <section class="faq-section">
         <h2>❓ 자주 묻는 질문</h2>
