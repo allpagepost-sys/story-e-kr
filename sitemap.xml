@@ -6,6 +6,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://story-e-kr.pages.dev/혼자-떠나는-여행-추천.html</loc>
+    <lastmod>2026-04-29T00:12:00.950Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://story-e-kr.pages.dev/국내-가족-여행지-추천.html</loc>
     <lastmod>2026-04-27T00:11:37.430Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -32,12 +38,6 @@
   <url>
     <loc>https://story-e-kr.pages.dev/해외-커플-여행지-추천.html</loc>
     <lastmod>2026-04-28T00:11:55.004Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://story-e-kr.pages.dev/혼자-떠나는-여행-추천.html</loc>
-    <lastmod>2026-04-29T00:12:00.950Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
